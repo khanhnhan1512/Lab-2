@@ -233,6 +233,7 @@ def loadDataContinent(continent: str = "Asia", format: str = "json", per_page: i
 
     df = pd.DataFrame()
     for country_code in lst_country_codes:
+        print(country_code)
         df = pd.concat([df, loadDataCountry(
             country_code=country_code,
             format=format,
